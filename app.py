@@ -100,7 +100,7 @@ if uploaded_file and product and start_indicator:
                     row_data.append(value)
                 else:
                     row_data.append(0)
-            row_data += ["LAANIKET", "L2UPLDPRM", current_datetime, 0]
+            row_data += ["LAAKRUTI", "L2UPLDPRM", current_datetime, 0]
             sheet3_rows.append(row_data)
 
         sheet3_df = pd.DataFrame(sheet3_rows, columns=sheet3_columns)
@@ -125,4 +125,5 @@ if uploaded_file and product and start_indicator:
 
 else:
     st.warning("⚠️ Please upload a file and fill all inputs to proceed.")
+
 
